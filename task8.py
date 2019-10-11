@@ -3,19 +3,17 @@ Creator: Aleksandra Krylova
 """
 
 while True:
-    string = list(input("Введите строку: ").lower())
-    string.sort()
-    dictionary = {}
-    for s in string:
+    STRING = list(input("Введите строку: ").lower())
+    STRING.sort()
+    DICTIONARY = {}
+    for s in STRING:
         if s.isalpha():
             try:
-                dictionary[s] += 1
+                DICTIONARY[s] += 1
             except:
-                dictionary[s] = 1
-    list_d = list(dictionary.items())
-    list_d.sort(reverse=True, key=lambda i: i[1])
-    for i in list_d:
+                DICTIONARY[s] = 1
+    LIST_D = list(DICTIONARY.items())
+    LIST_D.sort(reverse=True, key=lambda i: i[1])
+    for i in LIST_D:
         print(i[0], ":", i[1])
-    
-
     

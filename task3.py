@@ -4,11 +4,12 @@ Creator: Aleksandra Krylova
 
 
 while True:
-    x_start = int(input())
-    y_start = int(input())
-    x_finish = int(input())
-    y_finish = int(input())
-    if abs(x_start-x_finish) == 2 and abs(y_start-y_finish)== 5:
+    X_START = int(input())
+    Y_START = int(input())
+    X_FINISH = int(input())
+    Y_FINISH = int(input())
+    if abs(X_START-X_FINISH) == 2 and abs(Y_START-Y_FINISH) == 5:
         print("Yeee")
     else:
         print("No no no")
+        

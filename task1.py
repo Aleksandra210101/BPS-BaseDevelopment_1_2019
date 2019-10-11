@@ -3,5 +3,5 @@ Creator: Aleksandra Krylova
 """
 
 while True:
-    message = input()
-    print(len(message)*23/100 + ' р. ' + (len(message) * 23 % 100) + ' коп. ')
+    MES = input()
+    print(len(MES)*23/100, ' р. ', (len(MES) * 23 % 100), ' коп. ')

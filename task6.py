@@ -5,20 +5,20 @@ from math import gcd
 
 
 while True:
-    n = int(input())
-    numerator = []
-    divider = []
-    sum_num = 0
-    div = 1
-    for i in range(0, n):
-        numerator.append(int(input("Числитель:")))
-        divider.append(int(input("Знаменатель:")))
-    for i in range(0, n):
-        div = div * divider[i]
-    for i in range(0, n-1):
-        gcd1 = gcd(divider[i], divider[i+1])
-    for i in range(0, n):
-        numerator[i] = numerator[i]*div/divider[i]
-        sum_num += numerator[i]
-
-    print(str(round(round(sum_num) / gcd(round(sum_num), div))) + '/' + str(round(div / gcd(round(sum_num), div))))
+    N = int(input())
+    NUMERATOR = []
+    DIVIDER = []
+    SUM_NUM = 0
+    DIV = 1
+    for i in range(0, N):
+        NUMERATOR.append(int(input("Числитель:")))
+        DIVIDER.append(int(input("Знаменатель:")))
+    for i in range(0, N):
+        DIV = DIV * DIVIDER[i]
+    for i in range(0, N-1):
+        GCD1 = gcd(DIVIDER[i], DIVIDER[i+1])
+    for i in range(0, N):
+        NUMERATOR[i] = NUMERATOR[i] * DIV/DIVIDER[i]
+        SUM_NUM += NUMERATOR[i]
+    SUM_NUM = round(SUM_NUM)
+    print(str(round(SUM_NUM / gcd(SUM_NUM, DIV))), '/', str(round(DIV / gcd(SUM_NUM, DIV))))
