@@ -10,6 +10,8 @@ while True:
     Y_FINISH = int(input())
     if abs(X_START-X_FINISH) == 2 and abs(Y_START-Y_FINISH) == 5:
         print("Yeee")
+    elif abs(X_START-X_FINISH) == 5 and abs(Y_START-Y_FINISH) == 2:
+        print("Yeee")
     else:
         print("No no no")
         

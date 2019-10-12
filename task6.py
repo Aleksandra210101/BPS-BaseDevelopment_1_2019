@@ -21,4 +21,4 @@ while True:
         NUMERATOR[i] = NUMERATOR[i] * DIV/DIVIDER[i]
         SUM_NUM += NUMERATOR[i]
     SUM_NUM = round(SUM_NUM)
-    print(str(round(SUM_NUM / gcd(SUM_NUM, DIV))), '/', str(round(DIV / gcd(SUM_NUM, DIV))))
+    print(str(round(SUM_NUM / gcd(SUM_NUM, DIV))), '/', str(round(DIV / gcd(SUM_NUM, DIV))), sep="")
